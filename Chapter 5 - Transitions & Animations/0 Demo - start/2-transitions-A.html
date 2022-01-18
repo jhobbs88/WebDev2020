@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Transitions</title>
+        <style>            
+            nav {
+                text-align: center;
+            }
+            
+            a {
+                display: inline-block;
+                padding: 1rem;
+                text-decoration: none;
+                text-align: center;
+                color: black;
+                background-color: floralwhite;
+                border: 0.1rem solid;
+                border-radius: 0.5rem;
+            }
+            
+            a:hover, a:focus {
+                background-color: wheat;
+                transform: scale(1.3);
+            }
+            
+            a:active {
+                background-color: slategray;
+                text-decoration: line-through;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Transitions</h1>
+        <p>
+            <dfn>CSS transitions</dfn> provide a way to make changes in a property take place gradually over a period of time rather than taking effect immediately.
+        </p>
+        <h2>Example</h2>
+        <nav>
+            <a href="">Link to NOWHERE</a>
+        </nav>
+    </body>
+</html>

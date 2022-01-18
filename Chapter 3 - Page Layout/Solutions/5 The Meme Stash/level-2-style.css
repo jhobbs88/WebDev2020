@@ -1,0 +1,92 @@
+/* Primary content */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: lightgrey;
+  font-size: 0;
+}
+
+.author {
+  font-style: italic;
+  color: gray;
+  display: block;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Content */
+.side-bar, main, aside {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.side-bar {
+  padding: 20px;
+  background: white;
+  width: 30%;
+}
+
+main {
+  width: calc( 40% - 40px );
+  margin: 20px;
+}
+
+aside {
+  width: calc( 30% - 40px );
+  margin: 20px;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-bar nav a {
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+  display: block;
+  color: black;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.side-bar nav a:hover {
+  background: blue;
+  color: white;
+}
+
+/* Blocks (posts & asides) */
+main > article, aside section {
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px #000a;
+}
+
+main > article img {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.meme-comments {
+  padding-top: 20px;
+}
+
+.meme-comments article {
+  border-top: 1px black solid;
+  padding: 10px 0;
+}

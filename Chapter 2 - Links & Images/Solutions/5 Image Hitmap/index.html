@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Where's Wally?</title>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <h1>Can you find Wally?</h1>
+        <p>
+                Click on the image where you think he is...
+        </p>
+        <img src="images/wheres-wally.jpg" usemap="#wallys-map" alt="Wally is somewhere in this image.">
+        <map name="wallys-map">
+            <!--
+                Set the tabindex attribute to -1 so that the element is not reachable via the tab key (so that users can't find Wally by pressing the tab key). Read more about the tabindex attribute on MDN:
+                https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex
+            -->
+            <area shape="rect" coords="160, 910, 180, 945" href="you-win.html" alt="This is Wally!" tabindex="-1">
+            <area shape="rect" coords="0, 0, 1600, 1131" href="not-here.html" alt="Wally is not here..." tabindex="-1">
+        </map>
+    </body>
+</html>

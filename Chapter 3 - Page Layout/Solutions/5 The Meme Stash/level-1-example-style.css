@@ -1,0 +1,62 @@
+/*
+This is an example of how you might have completed Level 1 of the exercise.
+If you would like a bigger challenge, have a go at level 2, or move onto another exercise.
+*/
+
+/* This rule will style all `body` elements, but a normal HTML document will only have one of these */
+body {
+  background: black;
+  font-family: sans-serif; /* This will change the font of everything inside the body element to a "sans-serif" font */
+  color: white; /* This will change the text color of everything inside the body element, unless a child element overides it, e.g. on line 19. */
+}
+
+/* This rule will style `section` elements, but only if they are inside an `aside element` */
+aside section {
+  background: teal;
+}
+
+/* This rule will style both `h1` elements and `h2` elements */
+h1, h2 {
+  color: aquamarine;
+}
+
+h1 {
+  font-size: 3rem; /* 3rem means the font will be 3 times bigger than the font size for the file */
+  text-decoration: underline; /* This will make the text underline */
+}
+
+h2 {
+  font-size: 1.5rem; /* 1.5rem means the font will be 1.5 times bigger than the font size for the file */
+  margin-top: 4rem; /* rem can also be used on properties not directly to do with font and text */
+  margin-bottom: 10px;
+}
+
+/* This rule will style any `a` elements whose link has already been visited by the user */
+a:visited {
+  color: white;
+}
+
+/*
+These next CSS rules use class selectors. This means they will style elements
+with a certian class, rather than certian types.
+You can look inside `index.html` to see where these classes are used, e.g. look for
+<span class="author">NAPSTABLOOK22</span>
+*/
+
+.author {
+  font-weight: bold; /* This will make the text bold */
+  display: block; /* This will make the element act like a block element. Experiment with other values to see what they do */
+  /* display: inline-block; */
+  /* display: inline; */
+  /* display: none; */
+}
+
+.points, .views {
+  display: block;
+}
+
+.meme-comments {
+  background: brown;
+  padding: 1rem;
+  margin: 1rem 0;
+}

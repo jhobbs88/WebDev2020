@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Transitions</title>
+        <style>
+            #toggle {
+                font-size: 2rem;
+                position: fixed;
+                background-color: gold;
+                top: 1rem;
+                right: 0;
+                z-index: 1;
+                border: 0;
+            }
+            
+            #panel {
+                background-color: gold;
+                width: 300px;
+                padding: 1rem;
+                box-sizing: border-box;
+                position: fixed;
+                top: 1rem;
+                right: -300px;
+            }
+
+            #panel.visible {
+                transform: translateX(-100%);
+            }
+        </style>
+    </head>
+    <body>
+        <button id="toggle">?</button>
+        <aside id="panel">
+            <h2>Lorem ipsum</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi sit amet mauris commodo quis. Eros in cursus turpis massa. Ac odio tempor orci dapibus ultrices in iaculis nunc. Sagittis orci a scelerisque purus semper eget duis. Lacinia at quis risus sed. Amet risus nullam eget felis. Ornare arcu dui vivamus arcu felis. Cursus mattis molestie a iaculis. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Condimentum vitae sapien pellentesque habitant morbi. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Massa eget egestas purus viverra accumsan in nisl. Vulputate enim nulla aliquet porttitor lacus luctus accumsan. Imperdiet dui accumsan sit amet. Id porta nibh venenatis cras sed. Id eu nisl nunc mi ipsum faucibus vitae aliquet. Adipiscing vitae proin sagittis nisl rhoncus mattis. Varius duis at consectetur lorem donec.
+            </p>
+        </aside>
+        <script>
+            const toggle = document.getElementById('toggle');
+            const panel = document.getElementById('panel');
+                  
+            toggle.onclick = function togglePanel() {
+                panel.classList.toggle('visible');
+            }
+        </script>
+    </body>
+</html>

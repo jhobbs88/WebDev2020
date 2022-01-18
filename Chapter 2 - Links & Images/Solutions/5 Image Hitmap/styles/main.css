@@ -1,0 +1,8 @@
+body {
+    font-family: 'Comic Sans MS', fantasy;
+    text-align: center;
+}
+
+a {
+    color: blue; /* Override the default visited link color */
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Box Mode</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    
+        <h1>CSS Box Model</h1>
+
+        <p class="box">
+            The browser renders every element as a box that consists of three layers: content, padding, and margin. In addition, a border separates the padding and the margin layers.
+        </p>
+        <p>
+            There are two main types of boxes: block and inline. Unsurprisingly, by default, block-level elements are rendered as block boxes and inline elements are rendered as inline boxes. This can be changed using the display property. For example,
+        </p>
+        <p class="inline">
+            Inline paragraph 1
+        </p>
+        <p class="inline">
+            Inline paragraph 2
+        </p>
+        <span class="block">
+            Block span
+        </span>
+        <p>
+            Let's look at each type in more detail.
+        </p>
+
+        <h2>Block Box</h2>
+        <p>
+            Block boxes are placed one below the other. To ensure clean presentation, the top and bottom margins of adjacent block boxes collapse, and only the greater of them is rendered.
+        </p>
+        <p>
+            By default, a block box occupies the total width of its container (the whole viewport or another element), and its height is dynamically adjusted so that all the content fits inside the box. It is possible to change the width and height of a block box using the width and height properties.
+        </p>
+
+        <h2>Inline Box</h2>
+        <p>
+            Inline boxes are placed one beside the other and can <span class="border">break with the flow of their content.</span>
+        </p>
+        <p>
+            The size of an <span class="border">inline</span> <span class="border">box</span> cannot be changed and is determined only by its content. It cannot have top or bottom margin, and changing its padding only influences the position of boxes to its left and right.
+        </p>
+
+        <h2>Inline Block Box</h2>
+        <p>
+            There is a third box type, which combines the behaviour of an inline box with the behaviour of a block box.
+        </p>
+        <p>
+            Like inline boxes, <span class="inline-block border">inline block boxes are placed one beside the other,</span> <span  class="inline-block border">however, they cannot break with the flow of their content.</span>
+        </p>
+        <p>
+            Like block boxes, inline block boxes can have top and bottom margins, their top and bottom margins can influence the position of elements above and below them, and their size can be changed. The margins of inline block boxes, however, do not collapse.
+        </p>
+
+        <h2>Sizing Boxes</h2>
+        <p>
+            The width and height properties accepts values in pixels and rems, among other length units. Another useful unit is percent (%), which denotes the percentage of the width or height of the parent element. For example,
+        </p>
+        <div class="one-fourth box">Box 1</div>
+        <div class="one-fourth box">Box 2</div>
+        <p>
+            In addition, by default, changing the width and height of a box only applies to its content layer. To make the width and height of a box apply to the sum of the content, padding, and border, the box-sizing property should be set to border-box.
+        </p>
+    </body>
+
+</html>

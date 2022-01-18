@@ -1,0 +1,54 @@
+button {
+  background-color: #00976a;
+  color: white;
+  padding: 24px;
+  margin: 90px auto;
+  border: none;
+  display: block;
+  position: relative;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 50px;
+  /* ...... */
+  transition: 350ms;
+  transition-delay: 350ms;
+}
+
+button:hover {
+  background-color: #4d90fe;
+  border-radius: 0px;
+  /* Change the scale */
+  /* ...... */
+  transition-delay: 0ms;
+  transform: scale(1.25);
+}
+
+button::before,
+button::after {
+  content: '';
+  width: 0%;
+  height: 4px;
+  background-color: #001c77;
+  position: absolute;
+  display: block;
+  /* ...... */
+  transition-duration: 350ms;
+}
+
+button::before {
+  right: 0;
+  top: -10px;
+}
+
+button::after {
+  left: 0;
+  bottom: -10px;
+}
+
+/* The before and after pseudo-elements when the button is hovered */
+button:hover::before,
+button:hover::after {
+  width: 100%;
+  /* ...... */
+  transition-delay: 350ms;
+}

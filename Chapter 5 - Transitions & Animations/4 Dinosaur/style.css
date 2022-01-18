@@ -1,0 +1,89 @@
+/* 
+	Replace every '......' comment with some css to animate the dinosaur
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  position: absolute;
+  padding: 10px;
+}
+
+#sky {
+  background-color: lightblue;
+  height: 45%;
+  width: 100%;
+}
+
+#ground {
+  height: 55%;
+  width: 100%;
+  background-color: #a1cb84;
+}
+
+#dinosaur {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/* Head */
+#dino-head {
+  transform-origin: 30%;
+  position: absolute;
+  top: -87px;
+  left: 220px;
+  /* ...... */
+}
+#dinosaur:hover #dino-head {
+  /* Rotate the head */
+  /* ...... */
+}
+
+/* Mouth */
+#dino-mouth {
+  transform-origin: 30%;
+  position: absolute;
+  right: 8px;
+  bottom: 9px;
+  /* ...... */
+}
+#dinosaur:hover #dino-mouth {
+  /* Rotate the mouth */
+  transform: rotate(50deg) translateY(20px);
+}
+
+/* Speech bubble */
+#speech {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  right: -220px;
+  top: -180px;
+  padding: 32px;
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+  /* ...... */
+}
+#dinosaur:hover #speech {
+  opacity: 1;
+  /* ...... */
+}
+
+@keyframes roar {
+  /* ...... */
+}

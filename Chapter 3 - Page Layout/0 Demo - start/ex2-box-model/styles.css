@@ -1,0 +1,27 @@
+.box {
+    border: 1px solid;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.border {
+    border: 1px solid;
+}
+
+.one-fourth {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}

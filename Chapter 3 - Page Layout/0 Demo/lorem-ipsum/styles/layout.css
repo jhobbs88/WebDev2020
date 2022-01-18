@@ -1,0 +1,39 @@
+/* Header & footer */
+
+header, footer {
+    text-align: center;
+    padding: 2rem;
+}
+
+footer {
+    margin-top: 1rem;
+}
+
+
+/* Sidebar layout */
+
+main {
+    float: left;
+    width: calc(65% - 1rem);
+    margin-left: 1rem;
+}
+
+.sidebar {
+    float: right;
+    width: calc(35% - 2rem);
+    margin: 0 1rem;
+}
+
+
+/* Min and max width */
+
+nav, #main-and-sidebar {
+    min-width: 800px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header, #nav-wrapper, footer {
+    min-width: 800px;
+    box-sizing: border-box;
+}

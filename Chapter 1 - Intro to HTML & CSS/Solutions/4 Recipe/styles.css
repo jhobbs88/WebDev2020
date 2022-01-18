@@ -1,0 +1,33 @@
+/* General styles */
+
+body {
+    background-color: aliceblue;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* A comma separated list of selectors applies the declaration block to elements selected by all of the listed selectors. */
+h1, h2, h3 {
+    font-family: Palatino, serif;
+    color: darkslategray;
+}
+
+h1 {
+    font-size: 4rem;
+    font-style: italic;
+    color: black; /* Override the color declaration above. */
+}
+
+
+/* Classes */
+
+.notes {
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+/* This selector selects only <h2> elements of class 'notes' */
+h2.notes {
+    text-decoration: underline;
+}
+
+

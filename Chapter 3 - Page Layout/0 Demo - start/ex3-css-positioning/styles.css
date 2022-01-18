@@ -1,0 +1,12 @@
+h1 {
+    border: 10px dashed;
+    padding: 1rem;
+    text-align: center;
+    background-color: fuchsia;
+}
+
+p {
+    border: 1px solid;
+    padding: 1rem;
+    background-color: azure;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Toggle Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="game.js" charset="utf-8" defer></script>
+  </head>
+  <body>
+
+    <!-- A paragraph with instructions to the user for how to play -->
+    <p>Click on a square to toggle it's colour. Your goal is to make all of the squares white.</p>
+
+    <!-- The "grid" divider is used to properly style the squares -->
+    <div class="grid">
+      <!-- Each "sqaure" has an id and a class. -->
+      <!-- In this case, CSS will use the class to style them, and JavaScript will use their id to access them in code -->
+      <!-- We start with sqaure "0" because when game.js brings the squares into code, it puts them in an array;
+      Sqaure 0 will become item 0 in the array (because like in C++, JavaScript arrays are 0-indexed) -->
+      <div id="square0" class="square"></div>
+      <div id="square1" class="square"></div>
+      <div id="square2" class="square"></div>
+      <div id="square3" class="square"></div>
+      <div id="square4" class="square"></div>
+      <div id="square5" class="square"></div>
+      <div id="square6" class="square"></div>
+      <div id="square7" class="square"></div>
+      <div id="square8" class="square"></div>
+    </div>
+
+  </body>
+</html>

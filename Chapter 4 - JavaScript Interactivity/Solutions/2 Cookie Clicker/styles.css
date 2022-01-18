@@ -1,0 +1,7 @@
+#big-cookie {
+  width: 400px;
+  height: 400px;
+  background: burlywood;
+  border-radius: 50%; /* Makes the cookie a circle */
+  border: 28px dotted brown; /* Add some chocolate chips! */
+}

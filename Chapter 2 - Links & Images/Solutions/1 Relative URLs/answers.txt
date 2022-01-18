@@ -1,0 +1,7 @@
+a. dir1/file1.html
+
+b. ../index.html
+
+c. file5.html
+
+d. ../../di1/file3.html

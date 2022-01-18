@@ -1,0 +1,4 @@
+.btn, .nav-pills {
+    display: none;
+    visibility: hidden;
+}

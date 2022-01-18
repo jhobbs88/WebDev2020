@@ -1,0 +1,31 @@
+/* General styles */
+
+body {
+    font-family: Georgia, serif;
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-family: Times, serif;
+    font-size: 5rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Apple Chancery', cursive;
+    font-size: 1.75rem;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: brown;
+    color: antiquewhite;
+}
+
+img {
+    max-width: 100%;
+}

@@ -1,0 +1,122 @@
+<!--
+# WHAT CHANGES WERE MADE?
+
+## Change #1
+All the <PLACEHOLDER> elements were replaced with their semantically correct element.
+Some elements have been commented to explain why that element type was used.
+
+## Change 2
+<link rel="stylesheet" href="level-1-example-style.css"> was added to the `head` element.
+This links the HTML to the CSS, meaning the HTML elements will be styled by the CSS in the linked file.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Meme Stash</title>
+    <link rel="stylesheet" href="level-1-example-style.css"> <!-- Change #2 -->
+  </head>
+  <body>
+
+    <!-- Header element - includes the website's header content -->
+    <header>
+      <h1>The Meme Stash</h1>
+    </header>
+
+    <!-- Navigation element - includes content designed to let the user navigate the site -->
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Browse</a></li>
+        <li><a href="">Forums</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main element - includes the content that is unique to the current page -->
+    <main>
+
+      <article> <!-- The post is an article, as it is a self-contained bit of content that could stand on it's own -->
+        <section class="meme-main"> <!-- This is a section, as it only a part of the overall post -->
+          <h2>almost certainly the worst volume controls on the market</h2>
+          <span class="author">NAPSTABLOOK22</span>
+          <img src="https://i.imgur.com/GyxzACj.gif" alt="">
+          <span class="points">599 Points</span>
+          <span class="views">19,006 Views</span>
+        </section>
+
+        <section class="meme-comments"> <!-- This is a section, again as it only a part of the overall post -->
+          <article> <!--Each comment is an article however, as each comment is it's own little bit of content -->
+            <span class="author">TheBeigePhillip</span>
+            <span>I think I read that these were from a contest to find the worst possible volume control interface</span>
+          </article>
+          <article>
+            <span class="author">Targe0</span>
+            <span>This is why you don't leave coders alone for too long.</span>
+          </article>
+        </section>
+      </article>
+
+      <article>
+        <section class="meme-main">
+          <h2>Hello js/c++/java/python...</h2>
+          <span class="author">ironblockfist</span>
+          <img src="https://i.imgur.com/knM7V35.jpg" alt="">
+          <span class="points">599 Points</span>
+          <span class="views">19,006 Views</span>
+        </section>
+
+        <section class="meme-comments">
+          <article>
+            <span class="author">hazardousWaster</span>
+            <span>Hello world!</span>
+          </article>
+          <article>
+            <span class="author">superfeathers</span>
+            <span>I thought this movie was fun and enjoyed it, but it would've been nothing without Jim Carrey.</span>
+          </article>
+        </section>
+      </article>
+
+      <article>
+        <section class="meme-main">
+          <h2>Just some light humor</h2>
+          <span class="author">warmyourbeans</span>
+          <img src="https://i.imgur.com/ulhzyVS.png" alt="">
+          <span class="points">1,375 Points</span>
+          <span class="views">56,974 Views</span>
+        </section>
+
+        <section class="meme-comments">
+          <article>
+            <span class="author">themontsterr</span>
+            <span>jUsT SoMe LigHt HuMoR </span>
+          </article>
+        </section>
+      </article>
+
+    </main>
+
+    <!-- Aside element - includes content relvant to but not a part of the main content -->
+    <aside>
+      <section>
+        <h2>We're hiring</h2>
+        <p>Come work for us please. Learn more about the different roles avaliable.</p>
+        <nav> <!-- <nav> elements don't just have to be used in the header, they can be used for any content designed to let the user navigate the site. -->
+          <ul>
+            <li><a href="">Developer</a></li>
+            <li><a href="">Memer</a></li>
+            <li><a href="">Social Media Manager</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section> <!-- You could also argue that a fun fact is it's own bit of content, and therefore an article. Both are fine. -->
+        <h2>Fun Fact #42</h2>
+        <p>If you yelled for 8 years, 7 months, and 6 days, you would have produced enough sound energy to heat one cup of coffee</p>
+      </section>
+    </aside>
+
+  </body>
+</html>

@@ -1,0 +1,57 @@
+/* Navigation bar */
+
+#nav-wrapper {
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 1rem;
+}
+
+nav li {
+    width: 7rem;
+    float: left;
+}
+
+nav a {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+nav a.current-page {
+    color: dimgray;
+    background-color: antiquewhite;
+}
+
+
+/* Push the last link to the right */
+
+nav li:last-child {
+    float: right;
+}
+
+
+/* Dropdown menu */
+
+nav .dropdown {
+    position: relative;
+}
+
+nav .dropdown-content {
+    position: absolute;
+    margin: 0;
+    background-color: beige;
+    visibility: hidden;
+}
+
+nav .dropdown:hover .dropdown-content {
+    visibility: visible;
+}

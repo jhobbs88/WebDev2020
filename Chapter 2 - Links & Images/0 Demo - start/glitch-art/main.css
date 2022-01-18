@@ -1,0 +1,11 @@
+/* General styles */
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    font-family: 'Monaco', monospace;
+    font-size: 3rem;
+    letter-spacing: 0.35rem;
+}

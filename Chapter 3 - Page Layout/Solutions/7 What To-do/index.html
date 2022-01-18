@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Done-it</title>
+  </head>
+  <body>
+
+    <!-- This main container is used to place the aside element and main element next to each other. Can you think of other ways to achieve this same result? -->
+    <div class="main-container"><!--
+   --><aside class="side-menu">
+        <h1>My to-do lists</h1>
+        <nav><!-- Even if we won't treat each list as it's own seperate webpage, we still use a <nav> element here, as the user can use its contents to navigate the application -->
+          <ul>
+            <li><a href="">Chores</a></li>
+            <li><a href="">Web Dev</a></li>
+            <li><a href="">User Experience Design</a></li>
+            <li><a href="">Ideation</a></li>
+          </ul>
+        </nav>
+      </aside><!--
+
+   --><main>
+        <div class="todo-list">
+          <h1>Chores</h1>
+          <ol>
+            <li><div class="checkbox"></div><span>Laundry</span></li>
+            <li><div class="checkbox"></div><span>Hoover room floor</span></li>
+            <li><div class="checkbox"></div><span>Wash sheets</span></li>
+            <li><div class="checkbox"></div><span>Birthday present for Alex</span></li>
+          </ol>
+          <span class="add-task">Add Task</span>
+        </div>
+      </main><!--
+ --></div>
+
+    <aside class="popup-bar">
+      💡 Daily tip: Overwhelmed by the number of tasks you have? Try writing out on paper the things you want to do today, and focus on those instead of trying to think about everything at once.
+      <span class="close-popup">🞫</span>
+    </aside>
+
+  </body>
+</html>

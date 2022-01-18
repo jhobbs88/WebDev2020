@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Video Example</title>
+        <style>
+            button {
+                font-size: 1rem;
+                width: 5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The <code>&lt;video&gt;</code> element</h1>
+        <video id="rabbit-video" src="media/rabbit320.mp4">
+            HTML5 video is not supported. <a href="media/rabbit320.mp4">Access video</a>.
+        </video>
+        <p>
+            <button id="play-pause">Play</button>
+            <button id="stop">Stop</button>
+        </p>
+        <label for="crazy-rabbit">Crazy Rabbit</label>
+        <input id="crazy-rabbit" type="checkbox">
+        <script>
+            const rabbitVideo = document.getElementById('rabbit-video');
+            const playPauseButton = document.getElementById('play-pause');
+            const stopButton = document.getElementById('stop');
+            const crazyRabbitCheckbox = document.getElementById('crazy-rabbit');
+            
+            let crazyRabbitTimeoutID;
+            
+            playPauseButton.onclick = playPauseVideo;
+            stopButton.onclick = stopVideo;
+            crazyRabbitCheckbox.onchange = toggleCrazyRabbit;
+            rabbitVideo.onended = pauseVideo;
+            
+            function playPauseVideo() {
+                if (rabbitVideo.paused) {
+                    playVideo();
+                } else {
+                    pauseVideo();
+                }
+            }
+            
+            function playVideo() {
+                rabbitVideo.play();
+                playPauseButton.textContent = 'Pause';
+                
+                if (crazyRabbitCheckbox.checked) {
+                    toggleCrazyRabbit();
+                }
+            }
+            
+            function pauseVideo() {
+                rabbitVideo.pause();
+                playPauseButton.textContent = 'Play';
+                
+                if (crazyRabbitCheckbox.checked) {
+                    toggleCrazyRabbit();
+                }
+            }
+            
+            function stopVideo() {
+                pauseVideo();
+                rabbitVideo.currentTime = 0;
+            }
+            
+            function toggleCrazyRabbit() {
+                if (crazyRabbitCheckbox.checked && !rabbitVideo.paused) {
+                    crazyRabbit();
+                } else {
+                    normalRabbit();
+                }
+            }
+            
+            function crazyRabbit() {
+                rabbitVideo.currentTime = Math.random() * 7;
+                rabbitVideo.playbackRate = Math.random() * 2 + 1;
+                
+                crazyRabbitTimeoutID = setTimeout(crazyRabbit, 100);
+            }
+            
+            function normalRabbit() {
+                rabbitVideo.playbackRate = 1;
+                clearTimeout(crazyRabbitTimeoutID);
+            }
+        </script>
+    </body>
+</html>

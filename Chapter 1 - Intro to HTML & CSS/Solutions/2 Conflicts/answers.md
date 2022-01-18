@@ -1,0 +1,5 @@
+a. The font size of paragraph 2 is 1.25 rems, which is equal to 20 pixels. It is set by the 'fancy' class selector, which overrides the value set by the <p> tag selector (1.1 rems) because class selectors are more specific than tag selectors.
+
+b. The text colour of paragraph 3 is 'lightgoldenrodyellow'. It is set by the 'dark' class selector, which overrides the value set by the 'fancy' class selector ('darkgoldenrod') because the 'dark' class selector appears after the 'fancy' class selector in conflicts.css (both override the value inherited from the <body> element, #123456).
+
+c. The background colour of paragraph 4 is 'darkblue'. It is set by the 'the-one-and-only' id selector, which overrides the value set by the 'dark' class selector because id selectors are more specific than class selectors.

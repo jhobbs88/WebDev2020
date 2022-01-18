@@ -1,0 +1,62 @@
+/* General styles */
+
+body {
+    background-color: red;
+}
+
+h1 {
+    color: lightgray;
+    background-color: black;
+    font-family: Avenir, sans-serif;
+    letter-spacing: 1px; /* Add 1 pixel between letters. */
+    word-spacing: 5px; /* Add 5 pixels between words */
+    text-align: center;
+}
+
+p {
+    color: whitesmoke;
+    font-family: Geneva, sans-serif;
+    line-height: 1.4;
+}
+
+
+/* Classes */
+
+.author {
+    color: gray;
+    background-color: blue;
+    font-family: Georgia, serif;
+    text-align: right;
+    font-weight: bold;
+}
+
+
+/* The poem's themes */
+
+.desire {
+    color: white;
+    background-color: darkred;
+    font-family: fantasy;
+    letter-spacing: 5px;
+    text-transform: lowercase; /* Transform text to lowercase. */ 
+}
+
+.delight {
+    color: pink;
+}
+
+.collapse {
+    font-size: 0.8rem;
+    line-height: 1.1;
+}
+
+.more {
+    font-size: 2rem;
+}
+
+
+/* The last phrase */
+
+#the-end {
+    text-decoration: line-through; /* Add line through the text (strikethrough) */
+}

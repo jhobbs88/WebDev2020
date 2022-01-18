@@ -1,0 +1,98 @@
+/* General styles */
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: red;
+    background-image:
+        linear-gradient(#0000 8rem, #fffe 20rem),
+        url(../images/menkman-valentines.jpg);
+    background-size: cover;
+    background-attachment: scroll, fixed;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Monaco', monospace;
+    font-size: 3rem;
+    letter-spacing: 0.35rem;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    text-shadow: 0 0 8rem red;
+    background-color: #666;
+    background-image: url(../images/betancourt-the-kodak-moment.gif);
+    background-repeat: space;
+    background-size: 2.5rem;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+
+h1:hover {
+    filter: invert(75%);
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:visited {
+    color: darkred;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    color: darkslategray;
+}
+
+
+/* Navigation bar */
+
+nav {
+    border-bottom: 0.35rem dashed red;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    background-color: red;
+    color: white;
+    padding: 1rem;
+    width: 5rem;
+    display: inline-block;
+    text-align: center;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: pink;
+    box-shadow: 0 0 2rem 0.5rem gray;
+}
+
+nav a.current-page {
+    background-color: gray;
+    box-shadow: 0 0 0 0;
+}

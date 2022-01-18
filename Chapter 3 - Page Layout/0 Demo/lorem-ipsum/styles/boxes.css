@@ -1,0 +1,52 @@
+/* General box design */
+
+article, .sidebar section {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-width: 0.5rem;
+    border-style: groove;
+}
+
+
+/* Posts */
+
+article {
+    border-color: silver;
+    background-color: whitesmoke;
+}
+
+article time {
+    font-size: 0.8rem;
+    color: dimgray;
+}
+
+article img {
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Sidebar */
+
+.sidebar section {
+    border-color: gold;
+    background-color: floralwhite;
+}
+
+.sidebar img {
+    display: block;
+    margin: 1rem auto;
+}
+
+
+/* Advertisement */
+
+.advert {
+    background-color: deeppink;
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    padding: 2rem;
+    border: 1rem double purple;
+}

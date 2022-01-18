@@ -1,0 +1,53 @@
+/* Sections */
+body {
+  background: black;
+  margin: 0;
+  display: flex;
+  color: white;
+  font-size: 24px;
+  color: white;
+  font-family: monospace;
+}
+
+#canvas-area {
+  width: 700px;
+  position: relative;
+}
+
+#control-area {
+  flex-grow: 1;
+  padding: 26px;
+}
+
+/* Display */
+canvas {
+  display: block;
+  background: white;
+  border: none;
+}
+
+#x-math, #y-math {
+  position: absolute;
+  bottom: 1em;
+  font-weight: bold;
+}
+
+#x-math {
+  color: cornflowerblue;
+  left: 5px;
+}
+
+#y-math {
+  color: lime;
+  left: 355px;
+}
+
+/* Controls */
+input {
+  height: 1em;
+  margin: 0 10px;
+}
+
+label, input {
+  vertical-align: middle;
+}

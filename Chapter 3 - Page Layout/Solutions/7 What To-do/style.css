@@ -1,0 +1,96 @@
+/*
+Tip:
+If you are trying to understand how a particular element is being styled, try
+inspecting the element with the Developer Tools. That way, you can see when
+multiple CSS rules are styling the same element, and how they come together to
+achieve the final result.
+You can try enabling and disabling different properties to see what difference
+it makes to the final result.
+*/
+
+/* Block elements layout */
+body {
+  font-family: sans-serif;
+  font-size: 22px;
+  margin: 0;
+}
+
+main, div, aside, nav {
+  border: 1px solid black;
+  box-sizing: border-box; /* This is important for making sure the border of these elements does not change their size. If you remove this property, notice how you are then able to slightly scroll the page - That's because these elements got slightly bigger */
+}
+
+ol, ul { /* This overrides the default styling of ordered and unordered lists */
+  list-style-type: none; /* This removes the bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  height: 100vh;
+}
+
+.main-container main,
+.main-container .side-menu {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+}
+
+.main-container main {
+  width: 80%;
+}
+
+.main-container .side-menu {
+  width: 20%;
+}
+
+/* Todo list */
+.todo-list {
+  padding: 8px;
+  margin: auto;
+  width: 500px;
+}
+
+.checkbox {
+  display: inline-block;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.todo-list li {
+  margin-bottom: 8px;
+}
+
+.todo-list li * { /* This selector will style all elements inside of a <li> element which is inside of a .todo-list */
+  vertical-align: middle;
+}
+
+.todo-list .add-task {
+  display: block;
+  border: 1px solid;
+}
+
+/* Side menu */
+.side-menu {
+  padding: 8px;
+}
+
+/* Pop up bar */
+.popup-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0; /* For an absolutey positioned element, setting the left and right properties to 0 is another way of making the element use up the full width of it's parent element */
+  right: 0;
+  background: grey;
+  padding: 8px;
+  text-align: center;
+}
+
+.popup-bar .close-popup {
+  position: absolute;
+  top: 0;
+  right: 4px;
+}

@@ -1,0 +1,47 @@
+/* ELEMENT STYLING */
+body {
+  background: black;
+  color: white;
+}
+
+p {
+  width: 800px;
+  margin: 1em auto;
+
+  font-family: sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* CLASS STYLING */
+.grid {
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  font-size: 0; /* The font size is set to zero so that there is no whitespace between the sqaure divs */
+}
+
+/* The default styling for all squares */
+.square {
+  width: 190px;
+  height: 190px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: #444; /* Dark gray */
+  display: inline-block;
+}
+
+/* Styling given to sqaures that also have the "active" class */
+.square.active {
+  background: #FFF; /* White */
+}
+
+/* Styling given to sqaures that also have the "active" class AND are being hovered over */
+.square.active:hover {
+  background: #CCC; /* Light gray */
+}
+
+/* Styling given to sqaures that DO NOT have the "active" class AND are being hovered over */
+.square:not(.active):hover {
+  background: #666; /* Gray */
+}

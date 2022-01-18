@@ -1,0 +1,19 @@
+/* This will style the `div` element with the `id="A"` attribute */
+div#A {
+  box-shadow: 5px 5px 5px black;
+}
+
+/* This will style the `div` element with the `id="B"` attribute */
+div#B {
+  box-shadow: 5px 5px 5px black inset;
+}
+
+/* This will style the `div` element with the `id="C"` attribute */
+div#C {
+  text-shadow: 5px 5px 1px black;
+}
+
+/* This will style the `div` element with the `id="D"` attribute */
+div#D {
+  filter: drop-shadow(5px 5px 1px black);
+}

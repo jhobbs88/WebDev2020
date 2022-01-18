@@ -1,0 +1,119 @@
+#gallery_strip {
+    margin-top:0.5rem;
+    display:flex;
+    flex-wrap: wrap;
+    margin-left:-2px;
+    max-width:275px;
+}
+
+#gallery_strip img {
+    height: 50px;
+    width: auto;
+}
+
+.book_img {display: inline-block;
+    max-width: 275px;
+    height: auto;    
+    text-align: center;
+}
+
+.book_img img {
+    width: 100%;
+    height: auto;
+/*    margin-top: 25px; */
+}
+
+.book_info {
+    position: relative;
+    font-size: 110%;
+}
+
+h2.author {
+    font-size: 1.2rem;
+}
+
+.book_title {
+    font-weight: bold;
+    color: #333333;
+    font-size: 120%;
+}
+
+.purchase {
+    position: relative;
+    height: auto;
+    overflow: auto;
+}
+
+.price {
+    position: relative;
+    float: left;
+    font-size: 110%;
+    font-weight: bold;
+    padding-right: 50px;
+    overflow: auto;
+    width: 125px;
+    padding-top: 7px;
+}
+
+.add_cart {
+    position: relative;
+    float: right;
+}
+
+.hi {
+    background-color: yellow;
+}
+
+.text {
+    line-height: 20px;
+}
+
+.related {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    margin: 0 0 0 15px;
+    border-left: 1px solid darkred;
+    text-align: center;
+}
+
+.related h4 {
+    background-color: darkred;
+    color: #fff;
+    padding: 3px 3px 3px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.related .content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#related-topics {
+    position: relative;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+
+#related-topics a {
+    display: inline-block;
+}
+
+.sep {
+    color: #8b0000;
+}
+
+#related-topics a:link { color: #000; text-decoration: none; }
+#related-topics a:hover { color: #000; text-decoration: underline; }
+#related-topics a:active { color: #000; text-decoration: none; }
+#related-topics a:visited { color: #000; text-decoration: none; }
+

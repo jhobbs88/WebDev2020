@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#square {
+  background-color: steelblue;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  transition: transform 2000ms ease;
+
+  /* Reorder the transformations */
+  transform: rotate(20deg) scale(0.5, 2) translate(200px, 50px) rotate(35deg);
+}
